@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+python-multipart
+# real pipeline also pulls in: opencv-python-headless, numpy,
+# ultralytics (yolo), torch, torchvision
