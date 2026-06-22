@@ -45,7 +45,7 @@ def run(image_bytes: bytes) -> OcrResult:
             confs.append(c)
 
     text, is_valid = normalise_and_validate("".join(digits))
-    overall_conf = (sum(confs) / len(confs)) if confs else 0.0
+    overall_conf = round(sum(confs) / len(confs), 4) if confs else 0.0
     return OcrResult(text=text, confidence=overall_conf, is_valid=is_valid)
 
 

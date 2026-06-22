@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# Model weights / data
+*.pt
+*.pth
+*.onnx
+*.pkl
+
+# Tooling / OS
+.idea/
+.vscode/
+.DS_Store
+.pytest_cache/
+.mypy_cache/
